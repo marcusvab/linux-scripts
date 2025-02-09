@@ -7,8 +7,8 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Define os valores fixos de chave e salt
-chave="MinhaChaveFixa"
-salt="MeuSaltFixo"
+chave="surfer123"
+salt="surfer1234"
 
 # Define o modo de operação
 modo=$1
@@ -37,4 +37,3 @@ elif [ "$modo" == "2" ]; then
     # Decodifica Base64 e descriptografa
     echo "$texto" | base64 --decode | openssl enc -d -aes-256-cbc -pbkdf2 -K "$chave_derivada" -iv "$iv_derivado"
     echo # Adiciona uma linha em branco
-fi
