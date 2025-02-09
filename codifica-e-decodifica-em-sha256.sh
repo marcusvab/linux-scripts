@@ -7,8 +7,8 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Define os valores fixos de chave e salt
-chave="surfer123"
-salt="surfer1234"
+chave="MinhaChaveFixa"
+salt="MeuSaltFixo"
 
 # Define o modo de operação
 modo=$1
